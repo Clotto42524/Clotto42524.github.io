@@ -56,12 +56,7 @@ plt.imshow(vertical_flip)
 plt.show
 ```
 This yields:
-
-<br />
-
 <img src="/img/posts/camaro_vertical_flip.jpg" width="150" style="float: left; margin-right: 1000px;" />
-
-<br />
 
 A further step we can take is to manipulate the colors so that the image is shown with only its Red, Green, or Blue shades.
 We do this by first creating an array - **red** containing only zeros, but taking exactly the same shape as the original image.
@@ -74,11 +69,7 @@ red[:, :, 0] = camaro[:, :, 0]
 plt.imshow(red)
 plt.show
 ```
-<br />
-
 <img src="/img/posts/camaro_red.jpg" width="150" style="float: left; margin-right: 1000px;" />
-
-<br />
 
 We can then do the exact same process for the Green and Blue shades:
 
@@ -102,6 +93,6 @@ plt.imshow(camaro_rainbow)
 plt.show
 ```
 Yielding: 
-<img src="/img/posts/camaro_rainbow.jpg" width="200" style="float: left; margin-right: 1000px;" />
+<img src="/img/posts/camaro_rainbow.jpg" width="200" style="float: left; margin-right: 1000px; margin-bottom: 1000px" />
 
 
