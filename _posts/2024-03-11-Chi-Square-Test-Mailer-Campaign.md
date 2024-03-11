@@ -44,7 +44,7 @@ Since we're only interested in comparing Mailer1 and Mailer2 in this instance, w
 campaign_data = campaign_data.loc[campaign_data["mailer_type"] != "Control"]
 ```
 
-We want to create a matrix which contains the data of the outcomes (mailer type 1 or 2 and signup yes or no). We use **crosstab** and pass our columns of interest *"mailer_type"* and *"signup_flag"*. We want our data to be an array, because this is what we need to use **chi2_contingency**, so we use the **values** method.
+We want to create a matrix which contains the data of the outcomes (mailer type 1 or 2 and signup yes or no). We use **crosstab** and pass our columns of interest *"mailer_type"* and *"signup_flag"* and save that as **observed_values**. We want our data to be an array, because this is what we need to use **chi2_contingency**, so we use the **values** method to give us that.
 Then we can use the output of **observed_values** to manually calculate the signup rates of each mailer variation.
 
 ```python
