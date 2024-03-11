@@ -95,7 +95,7 @@ plt.show
 Yielding: 
 <br/>
 <img src="/img/posts/camaro_rainbow.jpg" width="50" style="float: left; margin-right: 1000px;" />
-
+<br/>
 Here is some text
 
 
