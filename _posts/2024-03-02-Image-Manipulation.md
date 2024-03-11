@@ -11,7 +11,7 @@ This is a demonstration of some of the ways you can manipulate an image just wit
 
 Here's the original image that we'll be playing around with:
 <br />
-<img src="/img/posts/camaro.jpg" width="150" style="float: left; margin-right: 1000px; padding-bottom: 5px;" /> 
+<img src="/img/posts/camaro.jpg" width="200" style="float: left; margin-right: 1000px; padding-bottom: 5px;" /> 
 <br />
     
 First we start by importing various the libraries we'll need for this task. We used matplotlib to visualize the images as we were coding, but of course it wasn't needed for the manipulations themselves.
@@ -44,7 +44,7 @@ plt.show
 ```
 This gives us:
 
-<img src="/img/posts/camaro_cropped.jpg" width="150" style="float: left; margin-right: 1000px; padding-bottom: 5px;" />
+<img src="/img/posts/camaro_cropped.jpg" width="200" style="float: left; margin-right: 1000px; padding-bottom: 5px;" />
 
 <br />
 
@@ -56,7 +56,7 @@ plt.imshow(vertical_flip)
 plt.show
 ```
 This yields:
-<img src="/img/posts/camaro_vertical_flip.jpg" width="150" style="float: left; margin-right: 1000px; padding-bottom: 5px;" />
+<img src="/img/posts/camaro_vertical_flip.jpg" width="200" style="float: left; margin-right: 1000px; padding-bottom: 5px;" />
 
 A further step we can take is to manipulate the colors so that the image is shown with only its Red, Green, or Blue shades.
 We do this by first creating an array - **red** containing only zeros, but taking exactly the same shape as the original image.
@@ -69,7 +69,7 @@ red[:, :, 0] = camaro[:, :, 0]
 plt.imshow(red)
 plt.show
 ```
-<img src="/img/posts/camaro_red.jpg" width="150" style="float: left; margin-right: 1000px; padding-bottom: 5px;" />
+<img src="/img/posts/camaro_red.jpg" width="200" style="float: left; margin-right: 1000px; padding-bottom: 5px;" />
 
 We can then do the exact same process for the Green and Blue shades:
 
@@ -94,7 +94,7 @@ plt.show
 ```
 Yielding: 
 <br/>
-<img src="/img/posts/camaro_rainbow.jpg" width="150" style="float: left; margin-right: 1500px;" />
+<img src="/img/posts/camaro_rainbow.jpg" width="200" style="float: left; margin-right: 1500px;" />
 <br/>
 Here is some text
 
