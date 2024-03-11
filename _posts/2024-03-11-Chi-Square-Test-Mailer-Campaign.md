@@ -57,8 +57,8 @@ mailer1_signup_rate = 123 / (252 + 123)
 mailer2_signup_rate = 127 / (209 + 127)
 ```
 
-In preparation for running our test, we can create our null hypothesis, our alternative hypothesis and set our acceptance criteria of .05.
-While this isnt strictly needed for our test, it'll be nice to have it to state the conclusion at the end.
+In preparation for running our test, we can create our null hypothesis, our alternative hypothesis, and set our acceptance criteria of .05.
+While this isn't strictly needed for our test, it'll be nice to have it to state the conclusion at the end.
 
 ```python
 null_hypothesis = "There is no relationship between mailer type and signup rate. They are independent."
@@ -67,7 +67,7 @@ acceptance_criteria = .05
 ```
 
 Now that we have all our data ready, we can run our test.
-Using **chi2_contingency** and passing in our **observed_values**, we're able to calculate the chi square statistc, p-value, degrees of freedom, and expected values for our test.
+Using **chi2_contingency** and passing in our **observed_values**, we're able to calculate the chi square statistic, p-value, degrees of freedom, and expected values for our scenario.
 We can also get the critical value by using **chi2.ppf** and passing in our acceptance criteria and degrees of freedom.
 
 ```python
