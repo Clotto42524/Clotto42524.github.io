@@ -93,6 +93,6 @@ plt.imshow(camaro_rainbow)
 plt.show
 ```
 Yielding: 
-<img src="/img/posts/camaro_rainbow.jpg" height="100" style="float: left; margin-bottom: 1000px;" />
+<img src="/img/posts/camaro_rainbow.jpg" height="20" style="float: left; margin-bottom: 1000px;" />
 
 
