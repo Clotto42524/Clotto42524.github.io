@@ -12,7 +12,7 @@ This is a demonstration of some of the ways you can manipulate an image just wit
 Here's the original image that we'll be playing around with:
 
 <img src="/img/posts/camaro.jpg"
-    height="200"
+    width="200"
     style="float: left; margin-right: 10px;" />
     
 First we start by importing various the libraries we'll need for this task. We used matplotlib to visualize the images as we were coding, but of course it wasn't needed for the manipulations themselves.
@@ -46,7 +46,7 @@ plt.show
 This gives us:
 
 <img src="/img/posts/camaro_cropped.jpg"
-    height="200"
+    width="200"
     style="float: left; margin-right: 10px;" />
 
 Next we can try flipping the image vertically. This is done again by using the indexes of the array:
@@ -59,7 +59,7 @@ plt.show
 This yields:
 
 <img src="/img/posts/camaro_vertical_flip.jpg"
-    height="200"
+    width="200"
     style="float: left; margin-right: 10px;" />
 
 A further step we can take is to manipulate the colors so that the image is shown with only its Red, Green, or Blue shades.
@@ -74,7 +74,7 @@ plt.imshow(red)
 plt.show
 ```
 <img src="/img/posts/camaro_red.jpg"
-    height="200"
+    width="200"
     style="float: left; margin-right: 10px;" />
 
 We can then do the exact same process for the Green and Blue shades:
@@ -100,7 +100,7 @@ plt.show
 Yielding: 
 
 <img src="/img/posts/camaro_rainbow.jpg"
-    height="500"
-    style="float: left; margin-right: 50px;" />
+    width="200"
+    style="float: left; margin-right: 10px;" />
 
 
