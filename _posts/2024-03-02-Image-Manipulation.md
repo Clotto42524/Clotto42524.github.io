@@ -11,7 +11,7 @@ This is a demonstration of some of the ways you can manipulate an image just wit
 
 Here's the original image that we'll be playing around with:
 <br />
-<img src="/img/posts/camaro.jpg" width="150" style="float: left; margin-right: 1000px;" /> 
+<img src="/img/posts/camaro.jpg" width="150" style="float: left; margin-right: 1000px; padding-bottom: 5px;" /> 
 <br />
     
 First we start by importing various the libraries we'll need for this task. We used matplotlib to visualize the images as we were coding, but of course it wasn't needed for the manipulations themselves.
@@ -93,6 +93,7 @@ plt.imshow(camaro_rainbow)
 plt.show
 ```
 Yielding: 
-<img src="/img/posts/camaro_rainbow.jpg" width="20" style="float: left; margin-bottom: 1000px;" />
+<br/>
+<img src="/img/posts/camaro_rainbow.jpg" width="50" style="float: left; margin-bottom: 1000px;" />
 
 
