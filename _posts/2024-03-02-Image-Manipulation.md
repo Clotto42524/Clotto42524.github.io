@@ -13,7 +13,9 @@ Here's the original image that we'll be playing around with:
 
 <img src="/img/posts/camaro.jpg"
     width="150"
-    style="float: left; margin-right: 10px;" /> \
+    style="float: left; margin-right: 10px;" /> 
+
+<br />
     
 First we start by importing various the libraries we'll need for this task. We used matplotlib to visualize the images as we were coding, but of course it wasn't needed for the manipulations themselves.
 
