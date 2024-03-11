@@ -86,6 +86,7 @@ plt.show
 <br />
 
 We can then do the exact same process for the Green and Blue shades:
+
 ```python
 green = np.zeros(camaro.shape, dtype = "uint8")
 green[:, :, 1] = camaro[:, :, 1]
