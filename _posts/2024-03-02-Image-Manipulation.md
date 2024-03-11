@@ -44,7 +44,7 @@ plt.show
 ```
 This gives us:
 
-<img src="/img/posts/camaro_cropped.jpg" width="150" style="float: left; margin-right: 10px;" />
+<img src="/img/posts/camaro_cropped.jpg" width="150" style="float: left; margin-right: 1000px;" />
 
 <br />
 
@@ -59,7 +59,7 @@ This yields:
 
 <br />
 
-<img src="/img/posts/camaro_vertical_flip.jpg" width="150" style="float: left; margin-right: 10px;" />
+<img src="/img/posts/camaro_vertical_flip.jpg" width="150" style="float: left; margin-right: 1000px;" />
 
 <br />
 
@@ -76,7 +76,7 @@ plt.show
 ```
 <br />
 
-<img src="/img/posts/camaro_red.jpg" width="150" style="float: left; margin-right: 10px;" />
+<img src="/img/posts/camaro_red.jpg" width="150" style="float: left; margin-right: 1000px;" />
 
 <br />
 
@@ -102,9 +102,6 @@ plt.imshow(camaro_rainbow)
 plt.show
 ```
 Yielding: 
-
-<br />
-
-<img src="/img/posts/camaro_rainbow.jpg" width="200" style="float: left; margin-right: 10px;" />
+<img src="/img/posts/camaro_rainbow.jpg" width="200" style="float: left; margin-right: 1000px;" />
 
 
