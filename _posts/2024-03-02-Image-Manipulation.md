@@ -10,8 +10,7 @@ This is a demonstration of some of the ways you can manipulate an image just wit
 ---
 
 Here's the original image that we'll be playing around with:
-
-<img src="/img/posts/camaro.jpg" width="150" style="float: left; margin-right: 10px;" /> 
+<img src="/img/posts/camaro.jpg" width="150" style="float: left; margin-right: 100px;" /> 
 
 <br />
     
