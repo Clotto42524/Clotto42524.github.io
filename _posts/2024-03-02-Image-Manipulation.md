@@ -10,11 +10,8 @@ This is a demonstration of some of the ways you can manipulate an image just wit
 ---
 
 Here's the original image that we'll be playing around with:
-
 <br />
-
 <img src="/img/posts/camaro.jpg" width="150" style="float: left; margin-right: 100px;" /> 
-
 <br />
     
 First we start by importing various the libraries we'll need for this task. We used matplotlib to visualize the images as we were coding, but of course it wasn't needed for the manipulations themselves.
@@ -60,9 +57,9 @@ plt.show
 ```
 This yields:
 
-<img src="/img/posts/camaro_vertical_flip.jpg"
-    width="150"
-    style="float: left; margin-right: 10px;" />
+<br />
+
+<img src="/img/posts/camaro_vertical_flip.jpg" width="150" style="float: left; margin-right: 10px;" />
 
 <br />
 
@@ -77,9 +74,9 @@ red[:, :, 0] = camaro[:, :, 0]
 plt.imshow(red)
 plt.show
 ```
-<img src="/img/posts/camaro_red.jpg"
-    width="150"
-    style="float: left; margin-right: 10px;" />
+<br />
+
+<img src="/img/posts/camaro_red.jpg" width="150" style="float: left; margin-right: 10px;" />
 
 <br />
 
@@ -106,11 +103,8 @@ plt.show
 ```
 Yielding: 
 
-<img src="/img/posts/camaro_rainbow.jpg"
-    width="200"
-    style="float: left; margin-right: 10px;" />
+<br />
 
-<br />
-<br />
+<img src="/img/posts/camaro_rainbow.jpg" width="200" style="float: left; margin-right: 10px;" />
 
 
