@@ -48,8 +48,10 @@ plt.show
 This gives us:
 
 <img src="/img/posts/camaro_cropped.jpg"
-    width="200"
+    width="150"
     style="float: left; margin-right: 10px;" />
+
+<br />
 
 Next we can try flipping the image vertically. This is done again by using the indexes of the array:
 
@@ -61,8 +63,10 @@ plt.show
 This yields:
 
 <img src="/img/posts/camaro_vertical_flip.jpg"
-    width="200"
+    width="150"
     style="float: left; margin-right: 10px;" />
+
+<br />
 
 A further step we can take is to manipulate the colors so that the image is shown with only its Red, Green, or Blue shades.
 We do this by first creating an array - **red** containing only zeros, but taking exactly the same shape as the original image.
@@ -76,8 +80,10 @@ plt.imshow(red)
 plt.show
 ```
 <img src="/img/posts/camaro_red.jpg"
-    width="200"
+    width="150"
     style="float: left; margin-right: 10px;" />
+
+<br />
 
 We can then do the exact same process for the Green and Blue shades:
 ```python
@@ -104,5 +110,8 @@ Yielding:
 <img src="/img/posts/camaro_rainbow.jpg"
     width="200"
     style="float: left; margin-right: 10px;" />
+
+<br />
+<br />
 
 
