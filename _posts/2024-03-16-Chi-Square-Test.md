@@ -137,12 +137,6 @@ The *observed frequencies* are the true values that we’ve seen.
 
 The *expected frequencies* are essentially what we would *expect* to see based on all of the data.
 
-**Note:** Another option when comparing "rates" is a test known as the *Z-Test For Proportions*.  While, we could absolutely use this test here, we have chosen the Chi-Square Test For Independence because:
-
-* The resulting test statistic for both tests will be the same
-* The Chi-Square Test can be represented using 2x2 tables of data - meaning it can be easier to explain to stakeholders
-* The Chi-Square Test can extend out to more than 2 groups - meaning the business can have one consistent approach to measuring signficance
-
 ___
 
 <br>
@@ -286,7 +280,7 @@ To make this script more dynamic, we can create code to automatically interpret 
 
 ```python
 
-# print the results (based upon p-value)
+# print the results (based on p-value)
 if p_value <= acceptance_criteria:
     print(f"As our p-value of {p_value} is lower than our acceptance_criteria of {acceptance_criteria} - we reject the null hypothesis, and conclude that: {alternate_hypothesis}")
 else:
@@ -295,7 +289,7 @@ else:
 >> As our p-value of 0.16351 is higher than our acceptance_criteria of 0.05 - we retain the null hypothesis, and conclude that: There is no relationship between mailer type and signup rate.  They are independent
 
 
-# print the results (based upon p-value)
+# print the results (based on chi -quare statistic)
 if chi2_statistic >= critical_value:
     print(f"As our chi-square statistic of {chi2_statistic} is higher than our critical value of {critical_value} - we reject the null hypothesis, and conclude that: {alternate_hypothesis}")
 else:
