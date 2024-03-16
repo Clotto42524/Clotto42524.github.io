@@ -32,7 +32,7 @@ For the campaign promoting the club, customers were put randomly into three grou
 The client knows that customers who were contacted, signed up for the Delivery Club at a far higher rate than the control group, but now want to understand if there is a significant difference in signup rate between the cheap mailer and the expensive mailer.  This will allow them to make more informed decisions in the future, with the overall aim of optimising campaign ROI!
 
 <br>
-<br>
+
 ### Actions <a name="overview-actions"></a>
 
 For this test, as it is focused on comparing the *rates* of two groups - we applied the Chi-Square Test For Independence.  Full details of this test can be found in the dedicated section below.
@@ -53,7 +53,6 @@ We set out our hypotheses and Acceptance Criteria for the test, as follows:
 
 As a requirement of the Chi-Square Test For Independence, we aggregated this data down to a 2x2 matrix for *signup_flag* by *mailer_type* and fed this into the algorithm (using the *scipy* library) to calculate the Chi-Square Statistic, p-value, Degrees of Freedom, and expected values
 
-<br>
 <br>
 
 ### Results & Discussion <a name="overview-results"></a>
@@ -81,13 +80,13 @@ Our results here also do not say that there *definitely isn't a difference betwe
 Running more A/B Tests like this, gathering more data, and then re-running this test may provide us, and the client more insight!
 
 <br>
-<br>
 
 ___
 
 # Concept Overview  <a name="concept-overview"></a>
 
 <br>
+
 #### A/B Testing
 
 An A/B Test can be described as a randomised experiment containing two groups, A & B, that receive different experiences. Within an A/B Test, we look to understand and measure the response of each group - and the information from this helps drive future business decisions.
