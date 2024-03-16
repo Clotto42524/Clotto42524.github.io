@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chi Square Test for Mailer Campaign
-image: "/posts/email.jpeg"
+image: "/posts/ab-testing-title-img.png"
 tags: [Python, Chi Square]
 ---
 
