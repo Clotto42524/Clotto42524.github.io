@@ -1145,7 +1145,7 @@ to_be_scored.dropna(how = "any", inplace = True)
 # apply one hot encoding (transform only)
 categorical_vars = ["gender"]
 encoder_vars_array = one_hot_encoder.transform(to_be_scored[categorical_vars])
-encoder_feature_names = one_hot_encoder.get_feature_names(categorical_vars)
+encoder_feature_names = one_hot_encoder.get_feature_names_out(categorical_vars)
 encoder_vars_df = pd.DataFrame(encoder_vars_array, columns = encoder_feature_names)
 to_be_scored = pd.concat([to_be_scored.reset_index(drop=True), encoder_vars_df.reset_index(drop=True)], axis = 1)
 to_be_scored.drop(categorical_vars, axis = 1, inplace = True)
