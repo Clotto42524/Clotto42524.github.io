@@ -328,7 +328,7 @@ For ease, after we have applied One Hot Encoding, we turn our training and test 
 categorical_vars = ["gender"]
 
 # instantiate OHE class
-one_hot_encoder = OneHotEncoder(sparse=False, drop = "first")
+one_hot_encoder = OneHotEncoder(sparse_output = False, drop = "first")
 
 # apply OHE
 X_train_encoded = one_hot_encoder.fit_transform(X_train[categorical_vars])
@@ -624,7 +624,7 @@ As *gender* doesn't have any explicit *order* to it, in other words, Male isn't 
 categorical_vars = ["gender"]
 
 # instantiate OHE class
-one_hot_encoder = OneHotEncoder(sparse=False, drop = "first")
+one_hot_encoder = OneHotEncoder(sparse_output = False, drop = "first")
 
 # apply OHE
 X_train_encoded = one_hot_encoder.fit_transform(X_train[categorical_vars])
@@ -906,7 +906,7 @@ As *gender* doesn't have any explicit *order* to it, in other words, Male isn't 
 categorical_vars = ["gender"]
 
 # instantiate OHE class
-one_hot_encoder = OneHotEncoder(sparse=False, drop = "first")
+one_hot_encoder = OneHotEncoder(sparse_output = False, drop = "first")
 
 # apply OHE
 X_train_encoded = one_hot_encoder.fit_transform(X_train[categorical_vars])
