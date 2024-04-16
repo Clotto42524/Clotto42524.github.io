@@ -50,7 +50,7 @@ As we are predicting a binary output, we tested four classification modelling ap
 * Logistic Regression
 * Decision Tree
 * Random Forest
-* K Nearest Neighbours (KNN)
+* K Nearest Neighbors (KNN)
 
 For each model, we will import the data in the same way but will need to pre-process the data based up the requirements of each particular algorithm.  We will train & test each model, look to refine each to provide optimal performance, and then measure this predictive performance based on several metrics to give a well-rounded overview of which is best.
 <br>
@@ -1180,7 +1180,7 @@ There are slight differences in the order or "importance" for the remaining vari
 
 ___
 <br>
-# K Nearest Neighbours <a name="knn-title"></a>
+# K Nearest Neighbors <a name="knn-title"></a>
 
 We utlise the scikit-learn library within Python to model our data using KNN. The code sections below are broken up into 5 key sections:
 
@@ -1254,7 +1254,7 @@ data_for_model.dropna(how = "any", inplace = True)
 <br>
 ##### Outliers
 
-As KNN is a distance based algorithm, you could argue that if a data point is a long way away, then it will simply never be selected as one of the neighbours - and this is true - but outliers can still cause us problems here.  The main issue we face is when we come to scale our input variables, a very important step for a distance based algorithm.
+As KNN is a distance based algorithm, you could argue that if a data point is a long way away, then it will simply never be selected as one of the Neighbors - and this is true - but outliers can still cause us problems here.  The main issue we face is when we come to scale our input variables, a very important step for a distance based algorithm.
 
 We don't want any variables to be "bunched up" due to a single outlier value, as this will make it hard to compare their values to the other input variables.  We should always investigate outliers rigorously - in this case we will simply remove them.
 
@@ -1458,8 +1458,8 @@ The variables that have been dropped are *total_items* and *credit score* - we w
 
 Instantiating and training our KNN model is done using the below code.  At this stage we will just use the default parameters, meaning that the algorithm:
 
-* Will use a value for k of 5, or in other words it will base classifications based upon the 5 nearest neighbours
-* Will use *uniform* weighting, or in other words an equal weighting to all 5 neighbours regardless of distance
+* Will use a value for k of 5, or in other words it will base classifications based upon the 5 nearest Neighbors
+* Will use *uniform* weighting, or in other words an equal weighting to all 5 Neighbors regardless of distance
 
 ```python
 
@@ -1478,7 +1478,7 @@ clf.fit(X_train, y_train)
 
 To assess how well our model is predicting on new data - we use the trained model object (here called *clf*) and ask it to predict the *signup_flag* variable for the test set.
 
-In the code below we create one object to hold the binary 1/0 predictions, and another to hold the actual prediction probabilities for the positive class (which is based upon the majority class within the k nearest neighbours)
+In the code below we create one object to hold the binary 1/0 predictions, and another to hold the actual prediction probabilities for the positive class (which is based upon the majority class within the k nearest Neighbors)
 
 ```python
 
@@ -1560,7 +1560,7 @@ These are interesting.  The KNN has obtained the highest overall Classification 
 <br>
 ### Finding The Optimal Value For k <a name="knn-opt-k"></a>
 
-By default, the KNN algorithm within scikit-learn will use k = 5 meaning that classifications are based upon the five nearest neighbouring data-points in n-dimensional space.
+By default, the KNN algorithm within scikit-learn will use k = 5 meaning that classifications are based upon the five nearest neighboring data-points in n-dimensional space.
 
 Just because this is the default threshold *does not mean* it is the best one for our task.
 
